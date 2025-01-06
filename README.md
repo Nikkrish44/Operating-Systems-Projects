@@ -14,7 +14,7 @@ This repository contains the 5 Operating Systems projects I created in C!
 ## Custom Thread Library + Thread Synchronization 🧵
 - Designed a user-level threading library based on POSIX Pthreads, incorporating:
   - thread creation/termination
-  - Round-robin scheduling
+  - round-robin scheduling
   - joining
   - mutex operations
 - Developed TCB structure to handle thread-specific data such as CPU registers and stack, supporting up to 128 threads
@@ -23,9 +23,9 @@ This repository contains the 5 Operating Systems projects I created in C!
 
 ## Thread Local Storage 📖
 - Developed a thread-local storage (TLS) library leveraging block-based memory management methods including
-    - Copy On Write functionality (CoW)
-    - Read/Write
-    - Cloning
+    - copy on write functionality (CoW)
+    - read/write
+    - cloning
 - Utilized mmap for memory allocation with page-alignment and used mprotect to control read/write permissions for thread safety
 - Incorporated page fault handling and signal management to ensure different types of segfaults are handled correctly
 - Performed extensive debugging using GDB (GNU debugger)
